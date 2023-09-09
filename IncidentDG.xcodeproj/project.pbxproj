@@ -16,6 +16,7 @@
 		C2433BDC2AACDB4E009E8B1A /* IncidentDGUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2433BDB2AACDB4E009E8B1A /* IncidentDGUITestsLaunchTests.swift */; };
 		C2433BE92AACE584009E8B1A /* GifNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2433BE82AACE584009E8B1A /* GifNetwork.swift */; };
 		C2433BEB2AACE783009E8B1A /* DrawingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2433BEA2AACE783009E8B1A /* DrawingPad.swift */; };
+		C2433BEE2AACE8B1009E8B1A /* SwiftUIGIF in Frameworks */ = {isa = PBXBuildFile; productRef = C2433BED2AACE8B1009E8B1A /* SwiftUIGIF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2433BEE2AACE8B1009E8B1A /* SwiftUIGIF in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,9 @@
 			dependencies = (
 			);
 			name = IncidentDG;
+			packageProductDependencies = (
+				C2433BED2AACE8B1009E8B1A /* SwiftUIGIF */,
+			);
 			productName = IncidentDG;
 			productReference = C2433BBB2AACDB4D009E8B1A /* IncidentDG.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +226,9 @@
 				Base,
 			);
 			mainGroup = C2433BB22AACDB4D009E8B1A;
+			packageReferences = (
+				C2433BEC2AACE8B1009E8B1A /* XCRemoteSwiftPackageReference "swiftui-gif" */,
+			);
 			productRefGroup = C2433BBC2AACDB4D009E8B1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -595,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2433BEC2AACE8B1009E8B1A /* XCRemoteSwiftPackageReference "swiftui-gif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-gif.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2433BED2AACE8B1009E8B1A /* SwiftUIGIF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2433BEC2AACE8B1009E8B1A /* XCRemoteSwiftPackageReference "swiftui-gif" */;
+			productName = SwiftUIGIF;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2433BB32AACDB4D009E8B1A /* Project object */;
 }
